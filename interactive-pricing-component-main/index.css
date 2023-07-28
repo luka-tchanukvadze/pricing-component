@@ -14,7 +14,7 @@ p{
 
 .circles{
   position: absolute;
-  top: 8%;
+  top: 4rem;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -51,7 +51,7 @@ p{
 .box{
   background-color: white;
   align-items: center;
-  box-shadow: 0 0 0.5rem rgba(0, 0, 0, .2);
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, .1);
   border-radius: 1rem;
   padding: 1rem 2rem 2rem 2rem;
 }
