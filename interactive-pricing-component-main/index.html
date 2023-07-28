@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <img class="pattern" src="./images/bg-pattern.svg" alt="">
+  <img class="circles" src="./images/pattern-circles.svg" alt="">
+
+  <main class="container">
+    <header class="head">
+      <p class="title1">Simple, traffic-based pricing</p> <br>
+      <p class="title2">Sign-up for our 30-day trial. No credit card required.</p>
+    </header>
+
+    <div class="box">
+      <div class="income">
+        <div class="left views">
+          100K PAGEVIEWS
+        </div>
+        <div class="right">
+          <p class="number">$16.00</p>
+          <p class="month">/ month</p>
+        </div>
+      </div>
+
+      <div class="slide-container">
+        <input type="range" min="1" max="5" value="3" class="slider myRange">
+      </div>
+
+      <div class="for-check-box">
+        <p class="bill">Monthly Billing</p>
+
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider2 round"></span>
+        </label>
+
+        <p class="yearly-bill">Yearly Billing</p>
+        <p class="discount">25% discount</p>
+      </div>
+
+      <div class="shadow"></div>
+
+      <div class="others">
+        <div class="left-side">
+          <div class="check">
+            <img src="./images/icon-check.svg" alt="">
+            <p class="text">Unlimited websites</p>
+          </div>
+
+          <div class="check">
+            <img src="./images/icon-check.svg" alt="">
+            <p class="text">100% data ownership</p>
+          </div>
+
+          <div class="check">
+            <img src="./images/icon-check.svg" alt="">
+            <p class="text">Email reports</p>
+          </div>
+        </div>
+
+        <div class="right-side">
+          <button class="button">Start my trial</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+</html>

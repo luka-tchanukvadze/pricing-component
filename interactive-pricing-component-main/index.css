@@ -1,0 +1,302 @@
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+p{
+  display: inline-block;
+}
+
+.circles{
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.pattern{
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  top: 0;
+}
+
+.head{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+
+.title1{
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0;
+  color: hsl(227, 35%, 25%);
+}
+
+.title2{
+  text-align: center;
+  font-size: 1.1rem;
+  color: gray;
+  margin-top: 0;
+}
+
+.box{
+  background-color: white;
+  align-items: center;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, .2);
+  border-radius: 1rem;
+  padding: 1rem 2rem 2rem 2rem;
+}
+
+.income{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left{
+  color: gray;
+}
+
+
+.right{
+  display: flex;
+  gap: .5rem;
+  align-items: center;
+}
+.number{
+  font-size: 2rem;
+  font-weight: bold;
+  color: hsl(227, 35%, 25%);
+}
+
+.month{
+  color: gray;
+}
+
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  /* appearance: none; */
+  width: 100%;
+  border-radius: 1rem;
+  background-color: red; 
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  cursor: pointer;
+}
+
+
+.slider:hover {
+  opacity: 1;
+}
+
+/* .slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+
+  width: 23px;
+  height: 24px;
+  border: 0;
+  background-image: url('./images/your-image.png'); 
+  background-size: cover; 
+  background-position: center;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 23px;
+  height: 24px;
+  border: 0;
+  background-image: url('./images/your-image.png'); 
+  background-size: cover; 
+  background-position: center;
+  cursor: pointer;
+} */
+
+.for-check-box{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-right: 1rem;
+}
+
+.for-check-box p{
+  font-size: .75rem;
+  color: gray;
+}
+
+.for-check-box .discount{
+  color: orange;
+  margin-left: .5rem;
+  background-color: rgb(254, 240, 214);
+  padding: .2rem;
+  border-radius: 1rem;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider2 {
+  position: absolute;
+  cursor: pointer;
+  top: 10%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1.5rem;
+  width: 2.5rem;
+  background-color: hsl(224, 65%, 95%);
+  -webkit-transition: .4s;
+  transition: .4s;
+  transform: translateX(.8rem);
+}
+
+.slider2:hover{
+  background-color: hsl(174, 77%, 80%);
+}
+
+.slider2:before {
+  position: absolute;
+  content: "";
+  height: 1rem;
+  width: 1rem;
+  align-self: center;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider2 {
+  background-color: hsl(174, 86%, 45%);
+}
+
+input:focus + .slider2 {
+  box-shadow: 0 0 1px hsl(174, 77%, 80%);
+}
+
+input:checked + .slider2:before {
+  -webkit-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+.slider2.round {
+  border-radius: 2rem;
+}
+
+.slider2.round:before {
+  border-radius: 50%;
+}
+
+
+.shadow{
+  height: .01rem;
+  width: 100%;
+  background-color: lightgray;
+  margin: 2rem 0;
+}
+
+
+.others{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.left-side{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.left-side p{
+  font-size: .8rem;
+  color: gray;
+  margin-left: 0.5rem;
+}
+
+
+.button{
+  color: white;
+  background-color: hsl(227, 35%, 25%);
+  border: none;
+  padding: .8rem 2rem;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+@media (max-width: 46rem) {
+  .head {
+    margin-bottom: 2rem;
+    align-items: center;
+  }
+
+  .title1 {
+    font-size: 1.5rem;
+  }
+
+  .title2 {
+    width: 70%;
+    font-size: 1rem;
+  }
+
+  .right .number {
+    font-size: 1.5rem;
+  }
+
+  .month {
+    font-size: 0.8rem;
+  }
+
+  .box {
+    padding: 1rem;
+  }
+
+
+  .left-side p {
+    font-size: 0.6rem;
+  }
+
+  .left-side{
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .button {
+    padding: 0.6rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  .others{
+    flex-direction: column;
+  }
+
+}
